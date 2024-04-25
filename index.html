@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mintesinot Fino Portfolio Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+
+  <header class="header">
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="home">
+    <div class="home-page">
+      <h1>Hi, I'm Mintesinot Fino</h1>
+      <h3>I'm Software Developer</h3>
+      <br>
+      <p>Welcome to my portfolio website. Explore my work and get in touch!</p>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="about-page">
+      <h2>About Me</h2>
+      <p>I am a passionate software developer with a strong interest in Software Development. I love creating meaningful and engaging digital experiences.
+      Originally from Ethiopia, I am currently pursuing my degree  at Dakota State University.</p>
+      <div>
+        <img src="minte.jpg" alt="", width="300px">
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="portfolio">
+    <div class="portfolio-page">
+      <h2>Portfolio</h2>
+      <div class="project">
+        <h1>Education</h1>
+        <p>Dakota State University 2024 present</p>
+        <p>Bachelors and Associate degree | Computer Science and Software Development</p>
+        <h3>Personal Website</h3>
+        <p>A personal website showcasing my skills using HTML,CSS and JavaScript.</p>
+      
+      </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="contact-page">
+      <h2>Contact Me</h2>
+      <form class="contact__form" onsubmit="sendEmail(); reset(); return false;"> 
+        <div class="contact__input"> <input type="text" id="name" name="name" placeholder="Name" required=""> 
+        </div> <div class="contact__input"> <input type="email" id="email" name="email" placeholder="Email"> 
+        </div> 
+        <div class="contact__input"> <textarea id="message" name="message" placeholder="Message" required=""></textarea> 
+        </div> 
+        <div> 
+          <button class="btn btn--outline--dark contact__button" type="submit"> Send Message </button>
+         </div> </form>
+         <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/mintesinot-fino-762774264/" target="_blank">
+              <i class="fa-linkedin">Linkedin</i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/MinteFino" target="_blank">
+              <i class="fa-github">Github</i>
+            </a>
+          </li>
+        </ul>
+        
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2024 Mintesinot Fino.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

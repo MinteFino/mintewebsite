@@ -1,0 +1,128 @@
+body {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  background-color: #f9f9f9; /* Add a background color for the entire page */
+}
+
+/* Header Styles */
+.header {
+  background-color: #333;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Navigation Styles */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: transform 0.3s ease;
+}
+
+.navbar a:hover {
+  transform: translateY(-3px);
+}
+
+/* Home Section Styles */
+.home {
+  background-color: #00abf0;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.home h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.home h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+/* About, Portfolio, and Contact Section Styles */
+.about-page,
+.portfolio-page,
+.contact-page {
+  padding: 80px 10%;
+  background-color: wheat; /* Add a background color for consistency */
+}
+
+.about-page h2,
+.portfolio-page h2,
+.contact-page h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Contact Form Styles */
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact__input input,
+.contact__input textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.contact__button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact__button:hover {
+  background-color: #ffd700; /* Change button background color on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Adjust navigation links for smaller screens */
+  }
+
+  .navbar a {
+    padding: 10px 0;
+  }
+
+  .contact__form {
+    width: 90%; /* Adjust form width for smaller screens */
+  }
+}
