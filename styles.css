@@ -1,8 +1,10 @@
 body {
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
+  scroll-behavior: smooth;
   color: black;
   background-color: #f9f9f9; /* Add a background color for the entire page */
+  
 }
 
 /* Header Styles */
